@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int x,y,box;
+    printf("Enter Numbers:\n");
+    scanf("%d %d",&x,&y);
+    
+    //b er man jotokhon na 0 hobe, program will runing. 
+    while(y!=0)
+    {
+        // y er man "box" er modde nirapod e soriye rakha holo.
+        box=y;
+        // x ke y diye vag kore je "vagshesh" thake, ta y er modde rakha holo.
+        y=x%y;
+        // soriye rakha y er ager man x er modde deya holo.ekhon y hoye gelo boro man.
+        x=box;
+    }
+    printf("Your GCD:%d\n",x);
+
+    return 0;
+}
+/*On this program I used "Banglish"*/
+//ei program e boro songkha ke chot ta diye vag korte hobe, and vagsesh diye choto songkha ke abar vag korte hobe.Vagsesh 0 na asha porjonto code colbe. 
