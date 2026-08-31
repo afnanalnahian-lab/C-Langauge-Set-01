@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int dig,sum=0,n;
+    printf("Enter Your Number;\n");
+    scanf("%d",&n);
+    
+    do
+    {
+        do
+     {
+       dig=n%10;
+       sum=sum+dig;
+       n=n/10;
+     } while(n>0);
+    
+    } while(n>=10);//songkhati 2 ba tar beshi digit (20,100) hole loop ti abar cholbe. One digit e ashle loop stop hobe
+    
+    printf("Sun of Digits:%d",sum);
+
+    return 0;
+}
