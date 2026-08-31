@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    // The do-while loop executes the code block first, then checks the condition.
+    do {
+        printf("Please enter a positive number (greater than 0): ");
+        scanf("%d", &number);
+
+        // Optional friendly reminder for beginners
+        if (number <= 0) {
+            printf("That is not a positive number. Try again!\n\n");
+        }
+    } while (number <= 0); // The loop repeats if the number is 0 or negative.
+
+    printf("\nThank you! You entered a valid positive number: %d\n", number);
+
+    return 0;
+}
