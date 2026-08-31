@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int L;
+    
+    printf("Enter Your Year:\n");
+    scanf("%d",&L);
+    
+//Dui daphe condition kaz korbe.First condition na hole Second condition e jabe.
+    if(L%400==0||(L%4==0&&100!=0))
+    {
+        printf("%d is Leap Year\n",L);
+    }
+    else
+    {
+        printf("%d is not Leap Year\n",L);
+    }
+}
