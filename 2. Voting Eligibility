@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int v;
+    printf("Enter Your Old:\n");
+    scanf("%d",&v);
+    if(v>=18)
+    {
+        printf("You are Eligbale");
+    }
+    else
+    {
+        printf("You are not Eligbale");
+    }
+    return 0;
+}
