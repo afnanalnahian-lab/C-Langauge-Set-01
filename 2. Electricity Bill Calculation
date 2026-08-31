@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int u;
+    float bill;
+
+    printf("Enter Your Units:\n");
+    scanf("%d",&u);
+
+    if(u<=100)
+    {
+        bill=100*5.0;
+        printf("Total Bill is %.2f",bill);
+    }
+    else if(u<=200)
+    {
+        bill=100*5.0+(u-100)*7.0;
+        printf("Total bill is %.2f",bill);
+    }
+    else
+    {
+        bill=100*5.0+100*7.0+(u-200)*10.0;
+        printf("Total bill is %.2f",bill);
+    }
+}
