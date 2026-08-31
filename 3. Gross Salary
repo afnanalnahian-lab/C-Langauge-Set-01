@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    float gross_salary, commission, bonus, total_ms, basic_salary;
+    int price,qnt;
+    
+    //input
+    printf("Enter the Price of each Computer:\n");
+    scanf("%d",&price);
+    printf("Enter the number of Computer sold:\n");
+    scanf("%d",&qnt);
+    
+    total_ms=price*qnt;
+    basic_salary=1500;
+    commission=0.02*total_ms;
+    bonus=200*qnt;
+    gross_salary=basic_salary+commission+bonus;
+    
+    printf("Enter the Basic Salary is:%.2f\n",basic_salary);
+    printf("Enter the Bnous is:%.2f\n",bonus);
+    printf("Enter the Commission is:%.2f\n",commission);
+    printf("Enter the Gross Salary is:%.2f\n",gross_salary);
+    return 0;
+
+}
