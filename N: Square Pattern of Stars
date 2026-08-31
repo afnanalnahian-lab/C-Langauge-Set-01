@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+
+    printf("Enter the value of N: ");
+    scanf("%d", &N);
+
+    for (int i = 1; i <= N; i++) 
+    {
+         //min kaz hobe inner loop er modde
+         for (int j = 1; j <= N; j++) 
+        {
+            printf("* ");
+        }
+        // prititi line sesh kore new line e jaowart jonno.
+        printf("\n");
+    }
+
+    return 0;
+}
